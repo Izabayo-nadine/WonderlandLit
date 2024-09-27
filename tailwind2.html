@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      
+      
+      
+    </style>
+  </head>
+  <body class="bg-blue-100">
+    <nav class="bg-white shadow fixed top-0 w-full z-10">
+      <div class="container mx-auto px-4 py-2 flex items-center justify-between">
+        <a class="text-lg font-bold text-purple-400" href="#">wonderlandlit</a>
+        <button
+          class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 lg:hidden"
+          type="button"
+          id="navbarToggler"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+        <div class="hidden lg:flex lg:items-center lg:justify-between w-full" id="navbarNav">
+          <ul class="flex flex-col lg:flex-row lg:space-x-4 mx-auto">
+            <li class="nav-item">
+              <a class="text-primary text-blue-400 font-semibold px-3 py-2 rounded-lg" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-primary text-blue-400 font-semibold px-3 py-2 rounded-lg" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-primary text-blue-400 font-semibold px-3 py-2 rounded-lg" href="#feature">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-primary text-blue-400 font-semibold px-3 py-2 rounded-lg" href="#arrivo">Arrivals</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-primary text-blue-400 font-semibold px-3 py-2 rounded-lg" href="#genres">Genres</a>
+            </li>
+          </ul>
+          <a class="btn btn-primary text-white-100 bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600 " href="#">Login</a>
+        </div>
+      </div>
+    </nav>
+    
+    <script>
+      const navbarToggler = document.getElementById('navbarToggler');
+      const navbarNav = document.getElementById('navbarNav');
+    
+      navbarToggler.addEventListener('click', () => {
+        navbarNav.classList.toggle('hidden');
+        navbarNav.classList.toggle('flex');
+      });
+    </script>
+
+    <div class="container mx-auto mt-16">
+      <div class="flex flex-wrap items-center py-5">
+        <div class="w-full lg:w-1/2 px-4">
+          <div class="py-5">
+            <h1 class="mb-4 text-4xl  ml-16 md:text-1xl">Dive Into a Literary Wonderland</h1>
+            <h3 class="text-lg ml-16 fs-4 md:text-2xl">
+              Creating a sense of excitement and wonder around the world of books.
+            </h3>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 px-4">
+          <div class="py-5">
+            <img
+              src="reading.png"
+              alt="person reading book"
+              class="rounded-lg mx-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    
+    <div id="about" class="flex flex-wrap justify-center items-center py-10">
+      <div class="w-full lg:w-1/2 px-4">
+        <img src="book.png" alt="books image" class="rounded-lg mx-auto" />
+      </div>
+      <div class="w-full lg:w-1/2 flex items-center px-4">
+        <div class="px-1 w-full p-3 md:text-2xl">
+          <h1 class="fs-2">About us</h1>
+          <p>
+            Welcome to wonderland lit! We are passionate book enthusiasts
+            dedicated to creating a vibrant online community where readers can
+            explore, engage, and celebrate the world of literature. At
+            wonderland lit, we believe in the transformative power of books.
+            Whether you're a seasoned bibliophile or just beginning your
+            literary journey, our platform is designed to inspire and connect
+            readers from all walks of life.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <section class="container mx-auto py-12" id="feature">
+      <h2 class="text-center text-3xl font-bold">Features</h2>
+      <div class="mt-8 grid grid-cols-1 ml-16 sm:grid-cols-2 lg:grid-cols-4 justify-center mx-12 gap-4">
+          <div class="w-full sm:w-2/3 lg:w-3/4 mb-6 bg-white">
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+          <img src="half.png" class="w-full p-6 object-cover" alt="Chimamand Ngozi">
+          <div class="p-6">
+            <h5 class="text-xl font-bold mb-2">Chimamand Ngozi</h5>
+            <a href="#" class="text-blue-500 hover:underline block mb-2">Thriller, Horror, Romance</a>
+            <p class="text-gray-600">$16.87</p>
+            <button class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Learn more</button>
+          </div>
+        </div>
+        </div>
+        <div class="w-full sm:w-2/3 lg:w-3/4 mb-6 bg-white">
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+          <img src="jack.png" class="w-full p-6 object-cover" alt="Jack Higgin">
+          <div class="p-6">
+            <h5 class="text-xl font-bold mb-2">Jack Higgin</h5>
+            <a href="#" class="text-blue-500 hover:underline block mb-2">Thriller, Horror, Romance</a>
+            <p class="text-gray-600">$15.32</p>
+            <button class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Learn more</button>
+          </div>
+        </div>
+        </div>
+        <div class="w-full sm:w-2/3 lg:w-3/4 mb-6 bg-white">
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+          <img src="charles.png" class="w-full p-6 object-cover" alt="Jack Higgin">
+          <div class="p-6">
+            <h5 class="text-xl font-bold mb-2">Charles Dickens</h5>
+            <a href="#" class="text-blue-500 hover:underline block mb-2">Thriller, Horror, Romance</a>
+            <p class="text-gray-600">$15.32</p>
+            <button class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Learn more</button>
+          </div>
+        </div>
+        </div>
+        <div class="w-full sm:w-2/3 lg:w-3/4 mb-6 bg-white">
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+          <img src="struggle.png" class="w-full p-6 object-cover" alt="Charles Dickens">
+          <div class="p-6">
+            <h5 class="text-xl font-bold mb-2">Adolf Hitler</h5>
+            <a href="#" class="text-blue-500 hover:underline block mb-2">Thriller, Horror, Romance</a>
+            <p class="text-gray-600">$13.8</p>
+            <button class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Learn more</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="arrivo" class="container mx-auto py-12">
+        <h2 class="text-center text-3xl font-bold">Arrivals</h2>
+        <div class="mt-8 flex flex-wrap grid grid-cols-1 gap-4  ml-16 sm:grid-cols-2 mx-12 lg:grid-cols-4 gap-4">
+            <div class="w-full sm:w-2/3 lg:w-3/4 mb-4 bg-white h-full rounded-4">
+                <div class="card h-full text-center shadow-lg">
+                    <img src="year.png" class="w-full h-64 object-cover p-6 mx-auto" alt="New Arrivals">
+                    <div class="card-body">
+                        <h3 class="card-title text-xl font-semibold">New Arrivals</h3>
+                        <br>
+                        <a href="review.html" class="btn bg-blue-500 text-white py-2 px-4 rounded">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full sm:w-2/3 lg:w-3/4 mb-4 bg-white h-full">
+                <div class="card h-full text-center shadow-lg">
+                    <img src="Screenshot 2024-05-05 180613.png" class="w-full h-64 object-cover p-6 mx-auto" alt="New Arrivals">
+                    <div class="card-body">
+                        <h3 class="card-title text-xl font-semibold">New Arrivals</h3>
+                        <br>
+                        <button class="btn bg-blue-500 text-white py-2 px-4 rounded">Learn more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full sm:w-2/3 lg:w-3/4 mb-4 bg-white h-full">
+                <div class="card h-full text-center shadow-lg">
+                    <img src="shinning.png" class="w-full h-64 object-cover p-6 mx-auto" alt="New Arrivals">
+                    <div class="card-body">
+                        <h3 class="card-title text-xl font-semibold">New Arrivals</h3>
+                        <br>
+                        <button class="btn bg-blue-500 text-white py-2 px-4 rounded">Learn more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full sm:w-2/3 lg:w-3/4 mb-4 bg-white h-full">
+                <div class="card h-full text-center shadow-lg">
+                    <img src="great.png" class="w-full h-64 object-cover p-6 mx-auto" alt="New Arrivals">
+                    <div class="card-body">
+                        <h3 class="card-title text-xl font-semibold">New Arrivals</h3>
+                        <br>
+                        <button class="btn bg-blue-500 text-white py-2 px-4 rounded">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="genres" class=" mx-auto py-12">
+        <h2 id="new2" class="text-center text-3xl font-bold">Genres</h2>
+        <div class="mt-8 grid grid-cols-1 flex flex-wrap ml-16 sm:grid-cols-2 lg:grid-cols-4 mx-12 gap-4">
+            <div class="w-full sm:w-2/3 lg:w-3/4 mb-6 bg-white h-full">
+                <div class="card h-full shadow-lg">
+                    <img src="Horror.png" class="w-full h-64 object-cover p-3 mx-auto" alt="Horror">
+                </div>
+            </div>
+            <div class="w-full sm:w-2/3 lg:w-3/4 mb-4 bg-white h-full">
+                <div class="card h-full shadow-lg">
+                    <img src="romance.png" class="w-full h-64 object-cover p-3 mx-auto" alt="Romance">
+                </div>
+            </div>
+            <div class="w-full sm:w-2/3 lg:w-3/4 mb-4 bg-white h-full">
+                <div class="card h-full shadow-lg">
+                    <img src="fantacy.png" class="w-full h-64 object-cover p-3 mx-auto" alt="Fantasy">
+                </div>
+            </div>
+            <div class="w-full sm:w-2/3 lg:w-3/4 mb-4 bg-white h-full">
+                <div class="card h-full shadow-lg">
+                    <img src="family.png" class="w-full h-64 object-cover p-3 mx-auto" alt="Family">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="authors py-8">
+        <h2 class="text-center text-2xl font-bold">The Most Popular Authors</h2>
+        <div class="mt-8 grid grid-cols-1 flex flex-wrap ml-16 sm:grid-cols-2 lg:grid-cols-4 mx-12 gap-4">
+            <div class="w-full sm:w-1/2 lg:w-3/4 mb-4 bg-white h-full">
+                <div class="card h-full text-center shadow-lg">
+                    <img src="ngozi.png" class="w-full h-64 object-cover p-3 mx-auto" alt="Chimamand Ngozi Editch">
+                    <div class="card-body">
+                        <p class="card-text text-lg">Chimamand Ngozi Editch</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-3/4 mb-4 bg-white h-full">
+                <div class="card h-full text-center shadow-lg">
+                    <img src="caleb.png" class="w-full h-64 object-cover p-3 mx-auto" alt="Caleb Azumah">
+                    <div class="card-body">
+                        <p class="card-text text-lg">Caleb Azumah</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-3/4 mb-4 bg-white h-full">
+                <div class="card h-full text-center shadow-lg">
+                    <img src="margaret.png" class="w-full h-64 object-cover p-3 mx-auto" alt="Margaret Atwood">
+                    <div class="card-body">
+                        <p class="card-text text-lg">Margaret Atwood</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-3/4 mb-4 bg-white h-full">
+                <div class="card h-full text-center shadow-lg">
+                    <img src="morgan.png" class="w-full h-64 object-cover p-3 mx-auto" alt="Megan Nolan">
+                    <div class="card-body">
+                        <p class="card-text text-lg">Megan Nolan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="text-white py-8 bg-black">
+        <div class="container mx-auto text-center">
+            <h5 class="py-3 mr-10">Quick link</h5>
+            <div class="flex justify-evenly space-x-8">
+                <div>
+                    <ul>
+                        <li><a href="#" class=" hover:underline">Home</a></li>
+                        <li><a href="#about" class="a2 hover:underline">About us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#feature" class="f2 hover:underline">Featured</a></li>
+                        <li><a href="#arrivo" class="arr2 hover:underline">Arrivals</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#genres" class="gen hover:underline">Genres</a></li>
+                        <li><a href="#" class="term hover:underline">Terms & Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 ">
+                <div class="address text-center mr-19">
+                    <p><i class="fa fa-map-marker"></i> Chicago, US</p>
+                    <p><i class="fa fa-phone"></i> Phone: +00 151515</p>
+                    <p><i class="fa fa-envelope"></i> Email: wonderlandlit@gmail.com</p>
+                </div>
+                <div class="copy mt-4">
+                    <p>&copy; 2024, Designed by <span class="font-semibold">wonderland lit!</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+
+        body{
+            /* background-color: rgb(212, 227, 240); */
+            /* font-family: "poppins", sans-serif; */
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+
+        nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 0 13px #7f2fe0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100% !important;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 22px;
+}
+
+nav ul li {
+
+    transition:all 0.6s;
+}
+
+
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: dodgerblue;
+  }
+  
+  nav ul li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: dodgerblue;
+    transition: width 1s linear;
+  }
+  
+  nav ul li a:hover:before {
+    width: 100%;
+  }
+nav h1 {
+    color: #7f2fe0;
+}
+
+#login {
+    color: dodgerblue;
+    padding: 8px;
+    border-radius: 7px;
+    border: 1px solid #999;
+    outline:  none;
+    font-size: 1.2rem;
+    transition: all 0.4s;
+}
+
+#login:hover {
+    background: dodgerblue;
+    color: #fff;
+    border: none;
+}
+
+
+
+
+        
+        #img{
+            width: 20rem;
+            height: 30rem;
+            margin-left: 2rem;
+            margin-top: 10rem;
+        }
+        .title{
+            position: absolute;
+           margin-top: 10rem;
+           margin-left: 450px
+        }
+        .summary{
+            position: absolute;
+            font-size: 20px;
+            top: 15rem;
+            margin-left: 30rem;
+            
+        }
+        .readmorebtn  {
+    font-size: 1.2rem;
+    border-radius: 7px;
+    border: 1px solid   dodgerblue;;
+    padding: 7px;
+    transition: all 0.3s;
+ }
+ .readmorebtn:hover {
+    background: dodgerblue;
+    color: #fff;
+}
+#switch{
+    margin-top: 2rem;
+    margin-left: 7rem;
+}
+
+#want{
+    font-size: 1.2rem;
+    border-radius: 7px;
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+    padding: 7px;
+    transition: all 0.3s;outline: solid dodgerblue;
+}
+
+#want2{
+    font-size: 1.2rem;
+    border-radius: 7px;
+    background-color: darkblue;
+    border: none;
+    color: white;
+    padding: 7px;
+    transition: all 0.3s;
+    outline:  solid darkblue;
+}
+#cathy {
+     
+     margin-left: 28rem;
+}
+.mimi p{
+    position: absolute;
+    margin-left: 28rem;
+    top: 55rem;
+    font-size: 20px;
+}
+
+.name{
+    margin-top: 4rem;
+    margin-left: 5rem;
+    
+}
+.image{
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+.image img{
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+
+}
+
+
+
+.bottom{
+    position: relative;
+    background-color: black;
+    margin-top: 100px;
+    height: 300px;
+    width: 100%;
+    
+  }
+  .link {
+    display: block;
+    padding:30px 0px;
+   
+ }
+ .link2{
+    display: grid;
+    grid-template-columns: 30rem 30rem 30rem;
+    top: 5rem;
+    position: absolute;
+    margin-left: 12rem;
+    color: white;
+    cursor: pointer;
+ }
+ .link2 a:hover{
+    color: white;
+     text-decoration: overline;
+ }
+ ul{
+    list-style: none;
+ 
+ }
+ link ul li a{
+     flex-direction: column;
+     text-decoration: none;
+     font-size: 1em;
+    
+ }
+ .link ul li a:hover{
+     color: white;
+     text-decoration: overline;
+ }
+#q{
+    color: white;
+    margin-left: 700px;
+}
+
+.copy{
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 260px;
+    left: 40%;
+
+}
+/* #conn{
+    position: absolute;
+    top: 20px;
+    left: 650px;
+} */
+.address{
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 190px;
+    left: 39.3rem;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Wonderland</h1>
+        <ul>
+            <li>
+                <a href="home.html">
+                    <span class="menuText">Home</span>
+                    <i class='bx bx-home-alt-2 menuIcon'></i>
+                </a>
+            </li>
+            <li>
+                <a href="#about">
+                    <span class="menuText">About</span>
+                    <i class='bx bx-info-circle menuIcon' ></i>
+                </a>
+            </li>
+            <li>
+                <a href="#h11">
+                    <span class="menuText">Features</span>
+                    <i class='bx bxs-comment-add menuIcon' ></i>
+                </a>
+            </li>
+            <li>
+                <a href="#new">
+                    <span class="menuText">Arrivals</span>
+                    <i class='bx bxs-baby-carriage menuIcon' ></i>
+                </a>
+            </li>
+            <li>
+                <a href="#k4">
+                    <span class="menuText">Genres</span>
+                    <i class='bx bx-category menuIcon' ></i>
+                </a>
+            </li>
+        </ul>
+        <button id="login">
+            <span class="menuText">Login</span>
+            <i class='bx bx-log-in-circle menuIcon' ></i>
+        </button>
+    </nav>
+    
+    <div>
+
+    </div>
+    <div class="title">
+    <h2>The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness </h2>
+    <hr>
+    </div>
+    <img src="anxious.png" alt="photo" id="img">
+    <div id="switch">
+    <button  id="want">Want to read</button>&nbsp;<button id="want2">borrow book</button>
+</div>
+    <div class="summary">
+    <p id="text">THE INSTANT #1 NEW YORK TIMES BESTSELLER • A must-read for all parents: the generation-defining investigation into the collapse of youth mental health in the era of smartphones, social media, and big tech—and a plan for a healthier, freer childhood.
+
+        <p>“Erudite, engaging, combative, crusading.” —New York Times Book Review (Editors'Choice)</p>
+        <p></p>“Words that chill the parental heart… thanks to Mr. Haidt, we can glimpse the true horror of what happened not only in the U.S. but also elsewhere in the English-speaking world… lucid, memorable… galvanizing.” —Wall Street Journal.
+        “[An] important new book... The shift in kids' energy and attention from the physical world to the virtual one, Haidt shows, has been catastrophic, especially for girls.” —Michelle Goldberg, The New York Times
+        <span id="moretext" style="display: none;">
+           <p> After more than a decade of stability or improvement, the mental health of adolescents plunged in the early 2010s. Rates of depression, anxiety, self-harm, and suicide rose sharply, more than doubling on many measures. Why?</p>
+           In The Anxious Generation, social psychologist Jonathan Haidt lays out the facts about the epidemic of teen mental illness
+            that hit many countries at the same time. He then investigates the nature of childhood, including why children need play
+             and independent exploration to mature into competent, thriving adults. Haidt shows how the “play-based childhood” 
+             began to decline in the 1980s, and how it was finally wiped out by the arrival of the “phone-based childhood” in the early 2010s. 
+             He presents more than a dozen mechanisms by which this “great rewiring of childhood” has interfered with children's social and
+              neurological development, covering everything from sleep deprivation to attention fragmentation, addiction, loneliness, social contagion, 
+              social comparison, and perfectionism. He explains why social media damages girls more than boys and why boys have been withdrawing from the real world into the virtual world, 
+              with disastrous consequences for themselves, their families, and their societies.
+        </span>
+         </p>
+    <button  class="readmorebtn" type="button">read more</button>
+</div>
+<br>
+<br>
+    <script>
+    let readmorebtn=document.querySelector(".readmorebtn");
+        let text =  document.getElementById("moretext")
+        
+        readmorebtn.addEventListener('click', function(){
+            if (text.style.display == "none"){
+                document.getElementById("moretext").style.display =  "block";
+                readmorebtn.textContent="read less";
+            } else {
+                document.getElementById("moretext").style.display =  "none";
+                readmorebtn.textContent="read more";
+        
+            }
+        });
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <h1 class="name">about the author</h1>
+    
+  <div>
+    <h2 id="cathy">Jonathan haidt</h2>
+  <div class="image">
+    <img src="anxper.png" alt="jonathan haidt's image">
+   </div>
+    <div class="mimi">
+    <p>
+        Jonathan Haidt is the Thomas Cooley Professor of Ethical Leadership at New York University’s Stern School of Business. He obtained his PhD in social psychology from the University of Pennsylvania in 1992 and taught at the University of Virginia for sixteen years. His research focuses on moral and political psychology, as described in his book The Righteous Mind. His latest book, The Anxious Generation, is a direct continuation of the themes explored in The Coddling of the American Mind (written with Greg Lukianoff). He writes the After Babel Substack.
+        </p>
+    </div>
+</div>
+
+<footer class="bottom">
+    <div class="link">
+        <p id="q">Quick link</p>
+        <br>
+    </div>
+    <div class="link2">
+        <div>
+        <ul>
+          <li><a class="h2">home</a></li>
+          <li><a class="a2">About us</a></li>
+          </ul>
+        </div>
+        <div>
+            <ul>
+          <li><a class="f2">Featured</a></li>
+          <li><a class="arr2">Arrivals</a></li>
+          </ul>
+        </div>
+        <div>
+            <ul>
+          <li><a class="gen">Genres</a></li>
+          <li><a class="term">terms&privacy</a></li>
+                </ul>
+        </div>
+     </div>
+    
+      <div>
+        
+        <div class="address">
+            <div id="foter" class="w3-col m6 w3-large w3-margin-bottom">
+              <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+              <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+              <i class="fa fa-envelope" style="width:30px"><a></a></i> Email: wonderlandlit@gmail.com<br>
+           </div>
+      </div>
+      <div class="copy">
+        <p>copyright &copy;2024, Designed by<span class="Design">wonderland lit!</span></p>
+      </div>
+   </footer>
+</body>
+</html>
+
+
+

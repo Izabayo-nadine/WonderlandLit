@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div > p{
+            font-size: 20px;
+            color: pink;
+        }
+        p{
+            
+            display: inline;
+        }
+        nav{
+            background: pink;
+            position: fixed;
+        }
+        ul{
+            top: 0;
+        }
+        ul li{
+            display: inline;
+        }
+        table,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        th:nth-child(even) {
+ background-color: pink;
+}
+
+div + p { color: #009900;
+font-size: 32px;
+font-weight: bold;
+margin: 0px;
+text-align: center;
+}
+ol > li:nth-child(3n+2) {
+      background-color: red;
+    }
+    </style>
+</head>
+<body>
+
+    <div data-test="Hello, World!"></div>
+    <script>
+      const $element = document.querySelector('div');
+const customAttributeValue = $element.dataset.test;
+console.log(customAttributeValue); // Output: Hello, World!
+    </script>
+
+<table>
+    <thead>
+    <tr>
+    <td>no</td>
+    <td>district</td>
+    <td>population</td>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+    <td>1</td>
+    <td>karongi</td>
+    <td>400</td>
+    </tr>
+    <tr>
+    <td>2</td>
+    <td>nyabihu</td>
+    <td>300</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>nyamagabe</td>
+        <td>200</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>rubavu</td>
+        <td>600</td>
+    </tr>
+</tbody>
+
+    <tr>
+        <td colspan="2">total</td>
+        <td>1800</td>
+    </tr>
+    </table>
+
+    <!-- <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li>
+      </ol> -->
+        <ol start="10">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+            </ol>
+            <form>
+                <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                </fieldset>
+                <fieldset>
+                <legend>Address</legend>
+                <label for="street">Street:</label>
+                <input type="text" id="street" name="street">
+                <br>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city">
+                </fieldset>
+                <button type="submit">Submit</button>
+                </form>
+                <figure>
+                    <img src="charles.png" alt="A beautiful landscape">
+                    <figcaption>A beautiful landscape with a sunset view.</figcaption>
+                    </figure>
+
+                    <svg>
+                        <circle  cx="70" cy="50" r="40" r="40" stroke="green" stroke-width="4" fill="yellow" />
+                        </svg>
+                        <svg>
+                            <rect width="400" height="100" stroke="green" stroke-width="5" fill="yellow" />
+                            </svg>
+
+                            <div>Descendant selector property</div>
+<div>
+ <div>child div content</div>
+  <p>First paragraph</p>
+  <br>
+ <p>Second paragraph</p>
+</div>
+<p>Hello</p>
+<p>World</p>
+    <!-- <nav>
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>news </li>
+            <li>family</li>
+        </ul>
+      </nav>
+      <br>
+      <br>
+      <br>
+    <div>
+    <p>hello nadine</p>&nbsp;&nbsp;
+    <p>it's easy to talk to izzy nana</p>
+    <div>don't go there</div>
+    </div> -->
+</body>
+</html>
